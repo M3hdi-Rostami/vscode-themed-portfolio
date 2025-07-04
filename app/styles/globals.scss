@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap");
 
 * {
   scrollbar-width: 10px;
@@ -20,7 +20,15 @@
   border-left: 1px solid #1e1f29;
 }
 
-.content{
-    font-family: 'JetBrains Mono', monospace;
+.content {
+  font-family: "JetBrains Mono", monospace;
+}
 
+.code {
+  counter-reset: line;
+}
+
+.line::before {
+  content: counter(line);
+  counter-increment: line;
 }
