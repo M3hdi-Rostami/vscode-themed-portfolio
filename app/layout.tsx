@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import localFont from "next/font/local";
 import "@/app/globals.css";
+import ActivityBar from "./components/ActivityBar";
+import Sidebar from "./components/Sidebar";
+import MenuBar from "./components/TitleBar";
 
 export const metadata: Metadata = {
   title: "Portfolio | M3hdi Rostami",
@@ -28,9 +31,14 @@ export default function RootLayout({
   children,
 }: Readonly<{ children?: ReactNode }>) {
   return (
-    <html lang="fa" dir="rtl" suppressHydrationWarning>
+    <html lang="en" dir="ltr" suppressHydrationWarning>
       <body className={`min-h-screen ${UbuntuSans.className} antialiased`}>
-        <main>{children}</main>
+        <MenuBar />
+        <div className="flex h-[calc(100vh-2rem)]">
+          <ActivityBar />
+          <Sidebar />
+          <main className="flex-1 p-4 bg-[#1E1E1E]">{children}</main>
+        </div>
       </body>
     </html>
   );
