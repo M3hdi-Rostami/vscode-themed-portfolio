@@ -8,8 +8,9 @@ import localFont from "next/font/local";
 import MainTabBar from "./components/MainTabBar";
 
 export const metadata: Metadata = {
-  title: "Portfolio | M3hdi Rostami",
-  description: "Portfolio as mehdi rostami",
+  title: "M3hdi Rostami | Frontend Developer Portfolio",
+  description:
+    "Discover the portfolio of Mehdi Rostami, a passionate Frontend Developer specializing in modern web technologies.",
 };
 
 const UbuntuSans = localFont({
@@ -37,6 +38,7 @@ export default function RootLayout({
       dir="ltr"
       suppressHydrationWarning
       className="overflow-x-hidden"
+      data-theme=""
     >
       <body className={`min-h-screen ${UbuntuSans.className} antialiased`}>
         <TitleBar />
