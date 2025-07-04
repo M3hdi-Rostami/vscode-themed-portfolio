@@ -1,1 +1,26 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+
+* {
+  scrollbar-width: 10px;
+  scrollbar-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-bg);
+  border-left: 1px solid #1e1f29;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-left: 1px solid #1e1f29;
+}
+
+.content{
+    font-family: 'JetBrains Mono', monospace;
+
+}

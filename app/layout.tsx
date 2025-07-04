@@ -1,5 +1,5 @@
-import "@/app/styles/globals.scss";
 import "@/app/styles/themes.scss";
+import "@/app/styles/globals.scss";
 
 import { TitleBar, ActivityBar, Sidebar, Footer } from "./components";
 import type { Metadata } from "next";
@@ -43,9 +43,9 @@ export default function RootLayout({
         <div className="flex h-[calc(100vh-3.5rem)]">
           <ActivityBar />
           <Sidebar />
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full h-full">
             <MainTabBar />
-            <main className="flex-1 p-4 bg-[var(--main-bg)]">
+            <main className="flex-1 bg-[var(--main-bg)] overflow-y-hidden">
               {children}
             </main>
           </div>
