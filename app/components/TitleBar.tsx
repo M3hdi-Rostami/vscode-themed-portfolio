@@ -40,14 +40,14 @@ function MenuBar() {
         </div>
       </div>
       <p className="flex-1 text-center">M3hdi Rostami - Visual Studio Code</p>
-      <div className="flex items-center">
+      <div className="flex items-center gap-1">
         <span className="p-1 cursor-pointer hover:bg-[#555555]/80 rounded">
           <VscChromeMinimize />
         </span>
         <span className="p-1 cursor-pointer hover:bg-[#555555]/80 rounded">
           <VscChromeMaximize />
         </span>
-        <span className="p-1 cursor-pointer hover:bg-red-500/80 rounded">
+        <span className="p-1 cursor-pointer hover:bg-[#555555]/80 rounded">
           <VscChromeClose />
         </span>
       </div>
