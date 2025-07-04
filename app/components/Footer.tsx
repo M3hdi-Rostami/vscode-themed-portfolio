@@ -10,7 +10,7 @@ import {
 
 function Footer() {
   return (
-    <div className="h-7 w-full bg-blue-500 flex items-center justify-between gap-2 text-neutral-300">
+    <div className="h-7 w-full bg-[var(--footer-bg)] flex items-center justify-between gap-2 text-neutral-300">
       <div className="bg-green-700/90 text-white h-full w-10 flex items-center justify-center cursor-pointer hover:bg-green-600/90">
         <VscRemote />
       </div>

@@ -16,7 +16,6 @@ function DecorElements() {
       <div className={styles.codeSymbol2}>{"[]"}</div>
       <div className={styles.codeSymbol3}>{"=>"}</div>
       <div className={styles.dotPattern}></div>
-      <div className={styles.mobileAccent}></div>
     </div>
   );
 }

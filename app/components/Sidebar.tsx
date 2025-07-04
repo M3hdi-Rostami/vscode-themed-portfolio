@@ -36,7 +36,7 @@ function Sidebar() {
     },
   ];
   return (
-    <div className="h-full w-64 bg-[#252526]">
+    <div className="h-full w-64 bg-[var(--sidebar-bg)] md:block hidden">
       <div className="text-white text-xs px-5 py-2 flex items-center justify-between">
         <span className="uppercase font-medium">explorer</span>
         <VscKebabVertical size={16} className="rotate-90" />

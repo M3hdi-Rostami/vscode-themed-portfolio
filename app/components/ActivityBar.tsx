@@ -11,7 +11,7 @@ import {
 
 function ActivityBar() {
   return (
-    <div className="h-full w-12 bg-[#333333] flex flex-col items-center justify-between py-4">
+    <div className="h-full min-w-12 w-12 bg-[var(--activity-bar-bg)] flex flex-col items-center justify-between py-4">
       <div className="flex flex-col items-center gap-6">
         <IconWrapper>
           <VscFiles size={24} />
