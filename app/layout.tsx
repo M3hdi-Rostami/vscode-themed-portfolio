@@ -1,10 +1,12 @@
+import "@/app/globals.css";
+
+import ActivityBar from "./components/ActivityBar";
+import MenuBar from "./components/TitleBar";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import localFont from "next/font/local";
-import "@/app/globals.css";
-import ActivityBar from "./components/ActivityBar";
 import Sidebar from "./components/Sidebar";
-import MenuBar from "./components/TitleBar";
+import localFont from "next/font/local";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Portfolio | M3hdi Rostami",
@@ -34,11 +36,12 @@ export default function RootLayout({
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <body className={`min-h-screen ${UbuntuSans.className} antialiased`}>
         <MenuBar />
-        <div className="flex h-[calc(100vh-2rem)]">
+        <div className="flex h-[calc(100vh-3.5rem)]">
           <ActivityBar />
           <Sidebar />
-          <main className="flex-1 p-4 bg-[#1E1E1E]">{children}</main>
+          <main className="flex-1 p-4 bg-[#1E1E1E] relative">{children}</main>
         </div>
+        <Footer />
       </body>
     </html>
   );

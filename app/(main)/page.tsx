@@ -1,3 +1,9 @@
+import DecorElements from "../components/decorElements/DecorElements";
+
 export default function Home() {
-  return <div>home</div>;
+  return (
+    <div className="text-[#efefef]">
+      <DecorElements />
+    </div>
+  );
 }

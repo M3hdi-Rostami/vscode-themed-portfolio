@@ -7,7 +7,7 @@ import {
 
 function MenuBar() {
   return (
-    <div className="h-8 w-full bg-[#444444] py-1 px-2 flex items-center justify-between gap-4 text-neutral-300">
+    <div className="h-7 w-full bg-[#444444] py-1 px-2 flex items-center justify-between gap-4 text-neutral-300">
       <div className="flex items-center gap-3">
         <Image
           src="/logos/vscode_icon.svg"
