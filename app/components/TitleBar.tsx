@@ -47,7 +47,7 @@ function MenuBar() {
         <span className="p-1 cursor-pointer hover:bg-[#555555]/80 rounded">
           <VscChromeMaximize />
         </span>
-        <span className="p-1 cursor-pointer hover:bg-[#555555]/80 rounded">
+        <span className="p-1 cursor-pointer hover:bg-red-500/80 rounded">
           <VscChromeClose />
         </span>
       </div>
