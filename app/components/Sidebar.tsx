@@ -1,35 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { VscChevronDown, VscKebabVertical } from "react-icons/vsc";
+import { pages } from "@/app/data/pages";
 
 function Sidebar() {
-  const explorerItems = [
-    {
-      name: "home.tsx",
-      path: "/",
-      icon: "/logos/react_icon.svg",
-    },
-    {
-      name: "about.html",
-      path: "/about",
-      icon: "/logos/html_icon.svg",
-    },
-    {
-      name: "contact.css",
-      path: "/contact",
-      icon: "/logos/css_icon.svg",
-    },
-    {
-      name: "projects.js",
-      path: "/projects",
-      icon: "/logos/js_icon.svg",
-    },
-    {
-      name: "github.md",
-      path: "/github",
-      icon: "/logos/markdown_icon.svg",
-    },
-  ];
   return (
     <div className="h-full w-64 bg-[var(--sidebar-bg)] md:block hidden">
       <div className="text-white text-xs px-5 py-2 flex items-center justify-between">
@@ -41,11 +15,11 @@ function Sidebar() {
         <span className="uppercase font-medium">Portfolio</span>
       </div>
       <div className="px-4 text-neutral-200 text-xs font-medium flex flex-col">
-        {explorerItems.map((item) => (
-          <Link href={item.path} key={item.name}>
+        {pages.map((page) => (
+          <Link href={page.path} key={page.name}>
             <div className="flex items-center gap-2 hover:bg-neutral-600/20 transition py-0.5">
-              <Image src={item.icon} alt={item.name} height={18} width={18} />
-              <p>{item.name}</p>
+              <Image src={page.icon} alt={page.name} height={18} width={18} />
+              <p>{page.name}</p>
             </div>
           </Link>
         ))}
