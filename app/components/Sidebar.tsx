@@ -14,10 +14,10 @@ function Sidebar() {
         <VscChevronDown size={16} />
         <span className="uppercase font-medium">Portfolio</span>
       </div>
-      <div className="px-4 text-neutral-200 text-xs font-medium flex flex-col">
+      <div className="text-neutral-200 text-xs font-medium flex flex-col gap-0.5">
         {pages.map((page) => (
           <Link href={page.path} key={page.name}>
-            <div className="flex items-center gap-2 hover:bg-neutral-600/20 transition py-0.5">
+            <div className="flex items-center gap-2 hover:bg-neutral-600/20 transition py-1 px-4">
               <Image src={page.icon} alt={page.name} height={18} width={18} />
               <p>{page.name}</p>
             </div>

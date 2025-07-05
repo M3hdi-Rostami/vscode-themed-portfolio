@@ -32,3 +32,10 @@
   content: counter(line);
   counter-increment: line;
 }
+
+
+.main-tab-bar  {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sidebar-color) var(--scrollbar-track-bg);
+}
+

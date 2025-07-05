@@ -29,12 +29,12 @@ function Footer() {
             </span>
           </div>
         </div>
-        <div className="text-white">
+        <div className="text-white hidden md:block">
           Built by Mehdi Rostami - {new Date().getFullYear()} | Powered by Next
           js
         </div>
         <div className="flex items-center gap-1 h-full">
-          <span className="flex items-center gap-1 hover:bg-white/20 h-full cursor-default px-1 transition">
+          <span className="hidden md:flex items-center gap-1 hover:bg-white/20 h-full cursor-default px-1 transition">
             UTF-8
           </span>
           <span className="flex items-center gap-1 hover:bg-white/20 h-full cursor-default px-1 transition">

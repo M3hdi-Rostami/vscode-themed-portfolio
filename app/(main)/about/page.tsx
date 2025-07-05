@@ -1,8 +1,8 @@
 function About() {
   return (
-    <div className="h-full mx-auto text-[var(--text-color)] overflow-y-auto pt-10 content">
+    <div className="h-full md:mx-auto text-[var(--text-color)] overflow-y-auto pt-10 w-[calc(100%_-48px)] md:w-full p-6 md:p-16 content">
       <div className="flex flex-col items-center max-w-[900px] mx-auto h-full">
-        <h1 className="text-5xl font-bold mb-2 text-[var(--primary-color)] tracking-[-0.03em]">
+        <h1 className="md:text-5xl text-3xl font-bold mb-2 text-[var(--primary-color)] tracking-[-0.03em] text-center">
           Mehdi Rostami
         </h1>
         <div className="text-lg text-[var(--text-color)] mb-12">

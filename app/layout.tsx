@@ -37,10 +37,10 @@ export default function RootLayout({
       lang="en"
       dir="ltr"
       suppressHydrationWarning
-      className="overflow-x-hidden"
+      className="overflow-hidden"
       data-theme=""
     >
-      <body className={`min-h-screen ${UbuntuSans.className} antialiased`}>
+      <body className={`min-h-screen overflow-hidden ${UbuntuSans.className} antialiased`}>
         <TitleBar />
         <div className="flex h-[calc(100vh-3.5rem)]">
           <ActivityBar />
