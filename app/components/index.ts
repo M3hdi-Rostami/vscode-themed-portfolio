@@ -7,6 +7,8 @@ import ProjectCard from "./ProjectCard";
 import RepoCard from "./RepoCard";
 import ThemeSelector from "./ThemeSelector";
 import OutsideClickHandler from "./OutsideClickHandler";
+import ThemeSelectorBox from "./ThemeSelectorBox";
+import FullScreenProvider from "./FullScreenProvider";
 
 export {
   TitleBar,
@@ -18,4 +20,6 @@ export {
   RepoCard,
   ThemeSelector,
   OutsideClickHandler,
+  ThemeSelectorBox,
+  FullScreenProvider,
 };

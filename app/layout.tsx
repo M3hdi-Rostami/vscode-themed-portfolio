@@ -1,11 +1,10 @@
 import "@/app/styles/themes.scss";
 import "@/app/styles/globals.scss";
 
-import { TitleBar, ActivityBar, Sidebar, Footer, MainTabBar } from "@/app/components";
+import { TitleBar, ActivityBar, Sidebar, Footer, MainTabBar, ThemeSelectorBox, FullScreenProvider } from "@/app/components";
 import type { Metadata } from "next";
 import { type ReactNode } from "react";
 import localFont from "next/font/local";
-import ThemeSelectorBox from "./components/ThemeSelectorBox";
 
 export const metadata: Metadata = {
   title: "M3hdi Rostami | Frontend Developer Portfolio",
@@ -42,6 +41,7 @@ export default function RootLayout({
       data-theme="default-dark"
     >
       <body className={`min-h-screen overflow-hidden ${UbuntuSans.className} antialiased relative`}>
+        <FullScreenProvider />
         <ThemeSelectorBox />
         <TitleBar />
         <div className="flex h-[calc(100vh-3.5rem)]">
