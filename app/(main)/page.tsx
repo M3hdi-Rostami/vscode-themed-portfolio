@@ -57,7 +57,7 @@ export default function Home() {
       <div className="md:max-w-[1200px] md:text-left text-center w-full md:mx-auto flex md:grid md:grid-cols-[1.2fr_1fr] items-center justify-center md:gap-16 p-6 md:p-16 h-full">
         <div className="relative z-20 w-full max-w-full md:block hidden">
           <div className="w-full max-w-[600px] h-[550px] bg-[var(--main-bg)] rounded-lg overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.25)] relative border border-[var(--explorer-border)]">
-            <div className="flex flex-1 overflow-auto relative py-4 font-mono text-[0.9rem] leading-6">
+            <div className="flex flex-1 relative py-4 font-mono text-[0.9rem] leading-6 h-full overflow-hidden">
               <div className="flex flex-col py-4 w-[50px] bg-[var(--main-bg)] text-[#636e83] font-mono text-[13px] select-none text-right z-20">
                 {codeLines.map((_, index) => (
                   <div
