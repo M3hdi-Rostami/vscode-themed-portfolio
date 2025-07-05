@@ -1,22 +1,4 @@
-// @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@400;500;600;700&display=swap");
-
-.editorContent {
-  display: flex;
-  flex: 1;
-  overflow: auto;
-  position: relative;
-  padding: 1rem 0;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-.editorContent {
-  display: flex;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@400;500;600;700&display=swap");
 
 .lineNumber {
   line-height: 1.5;

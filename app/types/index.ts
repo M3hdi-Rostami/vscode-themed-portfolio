@@ -35,3 +35,8 @@ export interface User {
   public_repos: number;
   followers: number;
 }
+
+export interface Theme {
+  name: string;
+  icon: string;
+}

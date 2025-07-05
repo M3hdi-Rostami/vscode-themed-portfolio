@@ -38,7 +38,7 @@ export default function RootLayout({
       dir="ltr"
       suppressHydrationWarning
       className="overflow-hidden"
-      data-theme=""
+      data-theme="default-dark"
     >
       <body className={`min-h-screen overflow-hidden ${UbuntuSans.className} antialiased`}>
         <TitleBar />
