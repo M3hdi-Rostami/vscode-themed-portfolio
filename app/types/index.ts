@@ -14,6 +14,7 @@ export interface Project {
   description: string;
   logo: string;
   link: string;
+  demoLink: string;
   slug: string;
 }
 

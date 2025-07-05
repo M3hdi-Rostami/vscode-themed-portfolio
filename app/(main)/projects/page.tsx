@@ -2,7 +2,7 @@ import { ProjectCard } from "@/app/components";
 import { projects } from "@/app/data/projects";
 function Projects() {
   return (
-    <div className="max-w-[1200px] md:mx-auto h-full w-[calc(100%_-48px)] md:w-full p-6 md:p-16 overflow-y-auto content">
+    <div className="h-full overflow-x-hidden overflow-y-auto w-[calc(100%_-48px)] md:w-full p-6 md:p-16 content">
       <h1 className="text-2xl font-bold text-[var(--primary-color)] mb-4 tracking-[-0.03em] leading-[1.2]">
         My Projects
       </h1>
@@ -11,7 +11,7 @@ function Projects() {
         skills in web development, design, and problem-solving.
       </p>
 
-      <div className="my-8 grid gap-6 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+      <div className="my-8 grid gap-6 grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(400px,1fr))]">
         {projects.map((project) => (
           <ProjectCard key={project.slug} project={project} />
         ))}
