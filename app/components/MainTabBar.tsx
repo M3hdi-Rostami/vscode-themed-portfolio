@@ -15,7 +15,7 @@ function MainTabBar() {
         <Link
           href={page.path}
           key={page.name}
-          className={`  h-full min-w-max flex items-center gap-2 px-6 py-1 border-r border-r-[#222222] hover:cursor-pointer hover:bg-[#1e1e1e]/30 ${isActive(page.path) ? 'bg-[var(--main-bg)] text-[var(--text-color)]' : ''}`}
+          className={`  h-full min-w-max flex items-center gap-2 px-6 py-1 border-r border-r-[#222222] hover:bg-[#1e1e1e]/30 ${isActive(page.path) ? 'bg-[var(--main-bg)] text-[var(--text-color)] hover:bg-[var(--main-bg)] cursor-not-allowed' : 'cursor-pointer'}`}
         >
           <Image src={page.icon} alt={page.name} height={18} width={18} />
           <p>{page.name}</p>
