@@ -24,9 +24,8 @@ function FullScreen() {
 
     useEffect(() => {
         const storedValue = localStorage.getItem('isFullScreen');
-        if (storedValue === 'true') {
-            setIsFullScreen(true);
-        }
+
+        setIsFullScreen(storedValue === 'true');
 
         document.addEventListener('keydown', handleKeyDown);
         return () => {
@@ -35,10 +34,7 @@ function FullScreen() {
     }, []);
 
 
-    if (isFullScreen === null || isFullScreen) {
-        return null;
-    }
-
+    if (isFullScreen === null || isFullScreen) return null;
 
     return (
         (
