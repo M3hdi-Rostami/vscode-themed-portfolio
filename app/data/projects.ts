@@ -13,7 +13,7 @@ export const projects: Project[] = [
       "A Visual Studio Code themed developer portfolio built with Next.js and CSS Modules.",
     logo: "/logos/vsc.svg",
     link: "https://github.com/M3hdi-Rostami/vscode-themed-portfolio",
-    slug: "vscode-portfolio1",
+    slug: "vscode-portfolio",
   },
   {
     title: "gym24",
@@ -21,6 +21,6 @@ export const projects: Project[] = [
       "A modern and responsive gym and fitness club template built with React, designed to showcase services, trainers, and schedules with a clean and dynamic UI.",
     logo: "/logos/vsc.svg",
     link: "https://github.com/M3hdi-Rostami/gym24",
-    slug: "vscode-portfolio1",
+    slug: "gym24-landing",
   },
 ];
