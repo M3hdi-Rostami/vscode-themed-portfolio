@@ -1,11 +1,11 @@
 import "@/app/styles/themes.scss";
 import "@/app/styles/globals.scss";
 
-import { TitleBar, ActivityBar, Sidebar, Footer } from "./components";
+import { TitleBar, ActivityBar, Sidebar, Footer, MainTabBar } from "@/app/components";
 import type { Metadata } from "next";
 import { type ReactNode } from "react";
 import localFont from "next/font/local";
-import MainTabBar from "./components/MainTabBar";
+import ThemeSelectorBox from "./components/ThemeSelectorBox";
 
 export const metadata: Metadata = {
   title: "M3hdi Rostami | Frontend Developer Portfolio",
@@ -32,6 +32,7 @@ const UbuntuSans = localFont({
 export default function RootLayout({
   children,
 }: Readonly<{ children?: ReactNode }>) {
+
   return (
     <html
       lang="en"
@@ -40,7 +41,8 @@ export default function RootLayout({
       className="overflow-hidden"
       data-theme="default-dark"
     >
-      <body className={`min-h-screen overflow-hidden ${UbuntuSans.className} antialiased`}>
+      <body className={`min-h-screen overflow-hidden ${UbuntuSans.className} antialiased relative`}>
+        <ThemeSelectorBox />
         <TitleBar />
         <div className="flex h-[calc(100vh-3.5rem)]">
           <ActivityBar />

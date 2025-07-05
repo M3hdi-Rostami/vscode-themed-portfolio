@@ -1,6 +1,7 @@
 'use client'
+
 import Link from "next/link";
-import { useState, type ReactNode, type MouseEvent, useEffect } from "react";
+import { type ReactNode, type MouseEvent, useEffect } from "react";
 import {
   VscAccount,
   VscCode,
@@ -9,8 +10,7 @@ import {
   VscMail,
   VscSettingsGear,
 } from "react-icons/vsc";
-import { Setting } from '@/app/components'
-import OutsideClickHandler from "./OutsideClickHandler";
+import { useThemeSelectorStore } from "../store/useThemeStore";
 
 function ActivityBar() {
 
@@ -19,8 +19,8 @@ function ActivityBar() {
     document.documentElement.setAttribute('data-theme', theme);
   }, []);
 
+  const { handleToggle } = useThemeSelectorStore()
 
-  const [showSetting, setShowSetting] = useState(false)
   return (
     <div className="h-full min-w-12 w-12 bg-[var(--activity-bar-bg)] flex flex-col items-center justify-between py-4">
       <div className="flex flex-col items-center gap-6">
@@ -52,11 +52,10 @@ function ActivityBar() {
           </IconWrapper>
         </Link>
 
-        <IconWrapper onClick={() => setShowSetting((prev) => !prev)}>
+        <IconWrapper onClick={handleToggle}>
           <VscSettingsGear size={24} />
         </IconWrapper>
       </div>
-      {showSetting && <OutsideClickHandler onOutsideClick={() => setShowSetting(false)}><Setting /></OutsideClickHandler>}
     </div>
   );
 }

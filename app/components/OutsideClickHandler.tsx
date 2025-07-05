@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useRef } from "react";
 
 function OutsideClickHandler({ onOutsideClick, children }: { onOutsideClick: () => void, children: React.ReactNode }) {
