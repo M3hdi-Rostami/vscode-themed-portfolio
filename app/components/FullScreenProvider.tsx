@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react";
+
 import { VscScreenFull } from "react-icons/vsc";
 
 function FullScreen() {
@@ -40,7 +41,7 @@ function FullScreen() {
         (
             <div
                 onClick={goFullScreen}
-                className="bg-[var(--main-bg)]/80 fixed top-0 left-0 w-screen h-screen cursor-zoom-in flex items-center justify-center text-center flex-col gap-4 text-white z-50"
+                className="bg-[var(--main-bg)]/80 fixed top-0 left-0 w-screen h-screen cursor-zoom-in flex items-center justify-center text-center flex-col gap-4 text-[var(--text-color)] z-50"
             >
                 <VscScreenFull size={56} />
                 <p className="text-2xl font-bold uppercase word-wrap">

@@ -6,7 +6,7 @@ function Projects() {
       <h1 className="text-2xl font-bold text-[var(--primary-color)] mb-4 tracking-[-0.03em] leading-[1.2]">
         My Projects
       </h1>
-      <p className="text-base font-normal text-white/70 mb-12 max-w-[600px] leading-[1.6]">
+      <p className="text-base font-normal text-[var(--text-color)]/70 mb-12 max-w-[600px] leading-[1.6]">
         Here&apos;s a collection of my recent work. These projects showcase my
         skills in web development, design, and problem-solving.
       </p>

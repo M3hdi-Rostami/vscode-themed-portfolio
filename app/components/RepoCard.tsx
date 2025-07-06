@@ -1,9 +1,9 @@
 import {
   VscEye,
-  VscRepoForked,
-  VscStarEmpty,
   VscGithubAlt,
   VscLinkExternal,
+  VscRepoForked,
+  VscStarEmpty,
   VscTypeHierarchy,
 } from "react-icons/vsc";
 
@@ -21,7 +21,7 @@ const RepoCard = ({ repo }: RepoCardProps) => {
           {repo.name}
         </h3>
         {repo.language && (
-          <div className="flex items-center gap-1 text-xs text-white/70 px-2 py-1 rounded bg-white/5 whitespace-nowrap">
+          <div className="flex items-center gap-1 text-xs text-[var(--text-color)]/70 px-2 py-1 rounded bg-white/5 whitespace-nowrap">
             <VscTypeHierarchy className="text-[var(--primary-color)] text-[0.9rem]" />
             <span>{repo.language}</span>
           </div>
@@ -34,15 +34,15 @@ const RepoCard = ({ repo }: RepoCardProps) => {
 
       <div className="flex justify-between items-center mt-auto pt-4 border-t border-white/5 flex-wrap gap-2">
         <div className="flex flex-wrap items-center gap-4">
-          <div className="flex items-center text-xs text-white/70 whitespace-nowrap">
+          <div className="flex items-center text-xs text-[var(--text-color)]/70 whitespace-nowrap">
             <VscStarEmpty className="text-[var(--primary-color)] mr-1 text-base" />
             {repo.stargazers_count}
           </div>
-          <div className="flex items-center text-xs text-white/70 whitespace-nowrap">
+          <div className="flex items-center text-xs text-[var(--text-color)]/70 whitespace-nowrap">
             <VscRepoForked className="text-[var(--primary-color)] mr-1 text-base" />
             {repo.forks}
           </div>
-          <div className="flex items-center text-xs text-white/70 whitespace-nowrap">
+          <div className="flex items-center text-xs text-[var(--text-color)]/70 whitespace-nowrap">
             <VscEye className="text-[var(--primary-color)] mr-1 text-base" />
             {repo.watchers}
           </div>

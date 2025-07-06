@@ -51,17 +51,17 @@ function Contact() {
       <h1 className="text-2xl font-bold text-[var(--primary-color)] mb-4 tracking-[-0.03em] leading-[1.2] text-center pt-12">
         Contact Me
       </h1>
-      <p className="text-base font-normal text-white/70 mb-12 max-w-[600px] leading-[1.6] text-center mx-auto">
+      <p className="text-base font-normal text-[var(--text-color)]/70 mb-12 max-w-[600px] leading-[1.6] text-center mx-auto">
         Feel free to reach out to me through any of the social platforms below.
         I&apos;m always open to new opportunities and connections.
       </p>
       <div className="code p-4 md:p-6 flex-1 max-w-[600px] mx-auto leading-8 relative overflow-hidden rounded border border-white/10 bg-[var(--sidebar-bg)] text-lg before:absolute before:top-0 before:left-0 before:h-1 before:w-full before:bg-[var(--primary-color)]">
-        <p className="line text-sm md:text-xl text-white/60 relative pl-6 md:pl-10 before:absolute before:left-0 before:top-0 before:mr-4 before:text-sm before:text-gray-500 before:opacity-80">
+        <p className="line text-sm md:text-xl text-[var(--text-color)]/60 relative pl-6 md:pl-10 before:absolute before:left-0 before:top-0 before:mr-4 before:text-sm before:text-gray-500 before:opacity-80">
           <span className="text-[var(--primary-color)]">.socials</span> {"{"}
         </p>
         {contactItems.map((item, index) => (
           <p
-            className="line text-sm md:text-xl min-w-max text-white/60 relative pl-6 md:pl-10 before:absolute before:left-0 before:top-0 before:mr-4 before:text-sm before:text-gray-500 before:opacity-80"
+            className="line text-sm md:text-xl min-w-max text-[var(--text-color)]/60 relative pl-6 md:pl-10 before:absolute before:left-0 before:top-0 before:mr-4 before:text-sm before:text-gray-500 before:opacity-80"
             key={index}
           >
             &nbsp;&nbsp;&nbsp;{item.social}:{" "}
@@ -76,7 +76,7 @@ function Contact() {
             ;
           </p>
         ))}
-        <p className="line relative text-sm md:text-xl text-white/60 pl-6 md:pl-10 before:absolute before:left-0 before:top-0 before:mr-4 before:text-sm before:text-gray-500 before:opacity-80">
+        <p className="line relative text-sm md:text-xl text-[var(--text-color)]/60 pl-6 md:pl-10 before:absolute before:left-0 before:top-0 before:mr-4 before:text-sm before:text-gray-500 before:opacity-80">
           {"}"}
         </p>
       </div>

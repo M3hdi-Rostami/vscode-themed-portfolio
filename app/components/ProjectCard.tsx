@@ -1,7 +1,8 @@
-import Image from "next/image";
-import { Project } from "@/app/types";
-import Link from "next/link";
 import { VscGithub, VscLink } from "react-icons/vsc";
+
+import Image from "next/image";
+import Link from "next/link";
+import { Project } from "@/app/types";
 
 interface ProjectCardProps {
   project: Project;
@@ -35,7 +36,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <h3 className="text-[1.35rem] font-semibold mb-3 text-[var(--primary-color)]">
           {project.title}
         </h3>
-        <p className="text-sm leading-[1.5] text-white/80 mb-4">
+        <p className="text-sm leading-[1.5] text-[var(--text-color)]/80 mb-4">
           {project.description}
         </p>
       </div>

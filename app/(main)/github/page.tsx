@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { VscPerson, VscRepo } from "react-icons/vsc";
-import GitHubCalendar from 'react-github-calendar';
-
 import { Repo, User } from "@/app/types";
+import { VscPerson, VscRepo } from "react-icons/vsc";
+
+import GitHubCalendar from 'react-github-calendar';
+import Image from "next/image";
 import { RepoCard } from "@/app/components";
 
 const uName = "M3hdi-Rostami";
@@ -28,7 +28,7 @@ async function Github() {
           <h1 className="text-4xl font-bold text-[var(--primary-color)] mb-6 tracking-[-0.03em] leading-[1.2]">
             GitHub
           </h1>
-          <p className="text-[1.1rem] font-normal text-white/70 mb-12 max-w-[600px] leading-[1.6]">
+          <p className="text-[1.1rem] font-normal text-[var(--text-color)]/70 mb-12 max-w-[600px] leading-[1.6]">
             Browse through my GitHub repositories and see what I&apos;ve been
             working on. These are some of my public repositories showcasing
             various projects and skills.
